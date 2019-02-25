@@ -1,7 +1,7 @@
 ---
-title: ""
-author: ""
-date: ""
+title: "Project 2"
+author: "Cheyenne McKinley and Justin Koss"
+date: "2/25/19"
 output: pdf_document
 ---
 
@@ -19,25 +19,32 @@ knitr::opts_chunk$set(echo = F)
 
 ### 1.	Title 
 
-
+Genome-wide analysis of estrogen receptor binding
 
 ### 2.	Authorship
 
-Author A^1^ 
+Jason S Carroll1, Clifford A Meyer2,3, Jun Song2,3, Wei Li2,3, Timothy R Geistlinger1, Je ́roˆme Eeckhoute1, Alexander S Brodsky4, Erika Krasnickas Keeton1, Kirsten C Fertuck1, Giles F Hall5, Qianben Wang1, Stefan Bekiranov6,8, Victor Sementchenko6, Edward A Fox5, Pamela A Silver5,7, Thomas R Gingeras6,
+X Shirley Liu2,3 & Myles Brown1
 
-^1^ Affiliation A
 
-### 3.	Research Questions 
+### 3. QRP
+1. Unreported variables: "We report the relevant statistics for only those PSSM cutoffs with maximum changes with respect to control."
+The authors did not provide reasons to exclude these variables. Instead they should have reported all of the variables, even if only in the supplemental files.
+
+We have no evidence to support that other QRPs were done in this study, however, unless the authors were transparent about them, we would not know about them.
+
+### 4.	Research Questions 
 
 *3.1.	Please list each research question included in this study.*
 
-1. 
+1. This study does not list research questions, but instead identifies a research objective, which is as follows, "... the identification of cis-regulatory sites in previously unexplored regions of the genome and the cooperating transcription factors underlying estrogen signaling in breast cancer."
 
-### 4.	Hypotheses
+
+### 5.	Hypotheses
 
 *4.1.	For each of the research questions listed in the previous section, provide one or multiple specific and testable hypotheses. Please state if the hypotheses are directional or non-directional. If directional, state the direction. A predicted effect is also appropriate here.*
 
-1. 
+1. Since this study is observational, there was no testable hypothesis.
  
 ## Sampling Plan
 
@@ -46,6 +53,8 @@ In this section we will ask you to describe how you plan to collect samples, as 
 ### 5.	Existing data
 
 *5.1.	Preregistration is designed to make clear the distinction between confirmatory tests, specified prior to seeing the data, and exploratory analyses conducted after observing the data. Therefore, creating a research plan in which existing data will be used presents unique challenges. Please select the description that best describes your situation. Please do not hesitate to contact us if you have questions about how to answer this question (prereg@cos.io).*
+
+We will not be conducting preregistration, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 - Registration prior to creation of data: As of the date of submission of this research plan for preregistration, the data have not yet been collected, created, or realized. 
 
@@ -61,31 +70,31 @@ In this section we will ask you to describe how you plan to collect samples, as 
 
 *6.1.	If you indicate that you will be using some data that already exist in this study, please describe the steps you have taken to assure that you are unaware of any patterns or summary statistics in the data. This may include an explanation of how access to the data has been limited, who has observed the data, or how you have avoided observing any analysis of the specific data you will use in your study. The purpose of this question is to assure that the line between confirmatory and exploratory analysis is clear.*  
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ### 7.	Data collection procedures.
 
 *7.1.	Please describe the process by which you will collect your data. If you are using human subjects, this should include the population from which you obtain subjects, recruitment efforts, payment for participation, how subjects will be selected for eligibility from the initial pool (e.g. inclusion and exclusion rules), and your study timeline. For studies that don’t include human subjects, include information about how you will collect samples, duration of data gathering efforts, source or location of samples, or batch numbers you will use.* 
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ### 8.	Sample size
 
 *8.1.	Describe the sample size of your study. How many units will be analyzed in the study? This could be the number of people, birds, classrooms, plots, interactions, or countries included. If the units are not individuals, then describe the size requirements for each unit. If you are using a clustered or multilevel design, how many units are you collecting at each level of the analysis?*
 
-
+3665 estrogen receptor binding sites and 3629 RNA PolII binding sites
 
 ### 9.	Sample size rationale
 
 *9.1.	This could include a power analysis or an arbitrary constraint such as time, money, or personnel.*
 
-
+That is the amount identified after BLAT analysis.
 
 ### 10.	Stopping rule
 
 *10.1.	If your data collection procedures do not give you full control over your exact sample size, specify how you will decide when to terminate your data collection.* 
 
- 
+ Not Applicable 
 
 ## Variables
 
@@ -95,29 +104,31 @@ In this section you can describe all variables (both manipulated and measured va
 
 *11.1.	Describe all variables you plan to manipulate and the levels or treatment arms of each variable. For observational studies and meta-analyses, simply state that this is not applicable.*
 
-
+Not applicable
 
 ### 12.	Measured variables
 
 *12.1.	Describe each variable that you will measure. This will include outcome measures, as well as any predictors or covariates that you will measure. You do not need to include any variables that you plan on collecting if they are not going to be included in the confirmatory analyses of this study.*
 
-
+RNA Pol density vs Distance from transcription start site, Conservation score vs Distance from center of binding sites (bp), number of binding sites vs number of genes, number of binding sites vs nucelotides, estrogen, number of motifs vs distance from center for ERE, AP*1, FKH, Oct, and C/EBP, MRNA level (as a multiple of siLUC control) vs time (h), transcript level (as a multiple of input) vs time (h), transcript level (as a multiple of vehicle) vs time (h)
 
 ### 13.	Indices
 
 *13.1.	If any measurements are going to be combined into an index (or even a mean), what measures will you use and how will they be combined? Include either a formula or a precise description of your method. If you are using a more complicated statistical method to combine measures (e.g. a factor analysis), you can note that here but describe the exact method in the analysis plan section.*
 
-
+Not applicable
 
 ## Design Plan
 
 In this section, you will be asked to describe the overall design of your study. Remember that this research plan is designed to register a single study, so if you have multiple experimental designs, please complete a separate preregistration.
 
+
+
 ### 14.	Study type
 
 -	Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.
 
--	Observational Study - Data is collected from study subjects that are not randomly assigned to a treatment. This includes surveys, natural experiments, and regression discontinuity designs.
+[X]	Observational Study - Data is collected from study subjects that are not randomly assigned to a treatment. This includes surveys, natural experiments, and regression discontinuity designs.
 
 -	Meta-Analysis - A systematic review of published studies.
 
@@ -128,7 +139,7 @@ In this section, you will be asked to describe the overall design of your study.
 
 *15.1.	Blinding describes who is aware of the experimental manipulations within a study. Mark all that apply.*
 
--	No blinding is involved in this study.
+[X]	No blinding is involved in this study.
 
 -	For studies that involve human subjects, they will not know the treatment group to which they have been assigned.
 
@@ -140,13 +151,13 @@ In this section, you will be asked to describe the overall design of your study.
 
 *16.1.	Describe your study design. Examples include two-group, factorial, randomized block, and repeated measures. Is it a between (unpaired), within-subject (paired), or mixed design? Describe any counterbalancing required. Typical study designs for observation studies include cohort, cross sectional, and case-control studies.*
 
-
+Cross sectional
 
 ### 17.	Randomization
 
 *17.1.	If you are doing a randomized study, how will you randomize, and at what level?*
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ## Analysis Plan
 
@@ -158,43 +169,45 @@ A confirmatory analysis plan must state up front which variables are predictors 
 
 *18.1.	What statistical model will you use to test each hypothesis? Please include the type of model (e.g. ANOVA, multiple regression, SEM, etc) and the specification of the model (this includes each variable that will be included as predictors, outcomes, or covariates). Please specify any interactions that will be tested and remember that any test not included here must be noted as an exploratory test in your final article.*
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ### 19.	Transformations
 
 *19.1.	If you plan on transforming, centering, recoding the data, or will require a coding scheme for categorical variables, please describe that process.*
 
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 
 ### 20.	Follow-up analyses
 
 *20.1.	If not specified previously, will you be conducting any confirmatory analyses to follow up on effects in your statistical model, such as subgroup analyses, pairwise or complex contrasts, or follow-up tests from interactions. Remember that any analyses not specified in this research plan must be noted as exploratory.*
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ### 21.	Inference criteria
 
 *21.1.	What criteria will you use to make inferences? Please describe the information you will use (e.g. p-values, Bayes factors, specific model fit indices), as well as cut-off criterion, where appropriate. Will you be using one or two tailed tests for each of your analyses? If you are comparing multiple conditions or testing multiple hypotheses, will you account for this?*
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ### 22.	Data exclusion
 
 *22.1.	How will you determine what data or samples, if any, to exclude from your analyses? How will outliers be handled?*
 
-  
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.  
 
 ### 23.	Missing data
 
 *23.1.	How will you deal with incomplete or missing data?*
 
-
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ### 24.	Exploratory analysis (optional)
 
 *24.1.	If you plan to explore your data set to look for unexpected differences or relationships, you may describe those tests here. An exploratory test is any test where a prediction is not made up front, or there are multiple possible tests that you are going to use. A statistically significant finding in an exploratory test is a great way to form a new confirmatory hypothesis, which could be registered at a later time.* 
 
 
+We cannot answer this question, because we will not be conducting a follow-up/replication study, due to unavailabiltiy of the data.
 
 ## Script (Optional) 
 
@@ -212,5 +225,7 @@ The purpose of a fully commented analysis script is to unambiguously provide the
 
 *26.1.	If there is any additional information that you feel needs to be included in your preregistration, please enter it here.*
 
+In order to answer most of these questions and conduct a follow up study we need access to the data. The authors provide a website to download the data (linked below) however, the data seems to be corrupted and is unable to be opened/downloaded. Until we would be able to obtain this data, there is no way to replicate the study. This highlights the problem with replicability, as this data was not publicly maintained, and on a private server. In the future, data should be made available on publicly maintained databases so that it can be available in the future, should something happen to the authors, personal technology, or the lab. This is something that Bucknell has done, and other institutions should also do the same.
 
+http://research.dfci.harvard.edu/brownlab/datasets/index.php? dir=ER_whole_human_genome/
 ## References 
