@@ -17,6 +17,19 @@ knitr::opts_chunk$set(echo = F)
 
 ## Study Information
 
+### Response to Comments
+  - Read and discuss your paper with your group partner
+    Paper was discussed offline between Cheyenne and Justin.
+  - Complete the nr-reporting-summary.pdf checklist (open in Adobe Acrobat)
+    1) statistical test used and whether they are one sided or two sided: not relevant
+    2) description of any assumptions or corrections: missing
+    3) full description of the statistcal parameters including central tendency or other basic           estimates: missing
+    4) for null hypothesis testing: not relevant
+    5) for bayesian analysis: not relevant
+    6) for heirarchical and complex designs: not relevant
+    They only did ChIP-on-Chip. They did not run ChIP-seq in this paper.
+  
+
 ### 1.	Title 
 
 Genome-wide analysis of estrogen receptor binding
@@ -32,6 +45,10 @@ X Shirley Liu2,3 & Myles Brown1
 The authors did not provide reasons to exclude these variables. Instead they should have reported all of the variables, even if only in the supplemental files.
 
 We have no evidence to support that other QRPs were done in this study, however, unless the authors were transparent about them, we would not know about them.
+
+2. There is no evidence of HARKing in this paper. However, one should take this with a grain of salt as no evidence does not mean they did not do it just that they were not transparent about it if they did.
+
+3. There is no evidence of P-hacking. However, one should take this with a grain of salt as no evidence does not mean they did not do it just that they were not transparent about it if they did.
 
 ### 4.	Research Questions 
 
@@ -65,7 +82,11 @@ We will not be conducting preregistration, because we will not be conducting a f
 -	Registration prior to analysis of the data: As of the date of submission, the data exist and you have accessed it, though no analysis has been conducted related to the research plan (including calculation of summary statistics). A common situation for this scenario when a large dataset exists that is used for many different studies over time, or when a data set is randomly split into a sample for exploratory analyses, and the other section of data is reserved for later confirmatory data analysis.
 
 -	Registration following analysis of the data: As of the date of submission, you have accessed and analyzed some of the data relevant to the research plan. This includes preliminary analysis of variables, calculation of descriptive statistics, and observation of data distributions. Studies that fall into this category are ineligible for the Pre-Reg Challenge. Please contact us (prereg@cos.io) and we will be happy to help you.
- 
+
+### Data Required 
+In order to confirm the analysis we would need the unaltered raw data that they used to conduct their statistical tests.
+
+
 ### 6.	Explanation of existing data
 
 *6.1.	If you indicate that you will be using some data that already exist in this study, please describe the steps you have taken to assure that you are unaware of any patterns or summary statistics in the data. This may include an explanation of how access to the data has been limited, who has observed the data, or how you have avoided observing any analysis of the specific data you will use in your study. The purpose of this question is to assure that the line between confirmatory and exploratory analysis is clear.*  
@@ -230,6 +251,14 @@ In order to answer most of these questions and conduct a follow up study we need
 To gain access to the data one of the researchers on the project had to be emailed and he then had to respond and personally send us the data. This also poses a problem in regards to the reproducibility of this study. First, the majority of the time the researchers do not respond to email requests asking for the data. Second, alot of times a researcher may have moved and their listed email changed so they become unreachable. Finally, while the researcher did send us the data, what he actually sent was the data embedded in another paper with a different title and due to the size of the data set it becomes quite difficult to ensure that the data is the exact same as the data we were originally looking for.
 
 http://research.dfci.harvard.edu/brownlab/datasets/index.php? dir=ER_whole_human_genome/
+
+### 27. Repeatability from other sources
+Article: Repeatability of published microarray gene expression analyses
+Authors: Ioannidis, John P A; Allison, David B; Ball, Catherine A; Coulibaly, Issa; Cui, Xiangqin; et al.
+Link: https://search.proquest.com/docview/222636826/fulltextPDF/633BF533BF5A4604PQ/1?accountid=9784
+
+This article tested the reproducibility of our and many other similar studies. While this article was able to access the data, this needs to be taken with a grain of salt as this article was published in 2009 (i.e. ten years ago). According to this article, our article did not state the software they used or the parameters for image processing. To test the reproducibility of our study, Ioannidis et al. specifically tried to recreate figures 2 a and b from our study and they determined that some aspects were reproducibale but overall there were discrepencies. While Ioannidis et al. was able to recreate the heat map, the number of significant genes they obtained was different then the published result. Ioannidis et al. also highlighted the fact that our study did not specify and state the specific p-value that they were using as their cutoff threshold. Finally, when Ioannidis et al. ran the statistical analysis that our paper did to generate figure 2b, the results that they got were different than the results that were published in our study. 
+
 ## References 
 
-Due to the difficulty that can arise with two people on the same R script and trying to push that  script at the same time, Cheyenne and Justin verbally discussed the answers to all questions with only one person typing on the actual R script. 
+Due to the difficulty that can arise with two people on the same R script and trying to push that  script at the same time, Cheyenne and Justin verbally discussed the answers to all questions with only one person at a time typing on the actual R script. 
